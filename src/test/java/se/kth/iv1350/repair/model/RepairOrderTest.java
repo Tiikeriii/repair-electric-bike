@@ -13,11 +13,11 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class RepairOrderTest {
     private RepairOrder repairOrder;
-    private CustomerInfo customerInfo;
+    private CustomerDTO customerInfo;
 
     @BeforeEach
     public void setUp() {
-        customerInfo = new CustomerInfo("Alice", 123, "a@b.com", "Trek", "FX3", "SN001");
+        customerInfo = new CustomerDTO("Alice", 123, "a@b.com", "Trek", "FX3", "SN001");
         repairOrder = new RepairOrder("ORD-001", customerInfo, "Bike won't start");
     }
 

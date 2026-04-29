@@ -1,7 +1,7 @@
 package se.kth.iv1350.repair.view;
 
 import se.kth.iv1350.repair.controller.RepairController;
-import se.kth.iv1350.repair.model.CustomerInfo;
+import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.DiagnosticReport;
 import se.kth.iv1350.repair.model.RepairOrder;
 import se.kth.iv1350.repair.model.RepairTask;
@@ -39,7 +39,7 @@ public class View {
         System.out.println("[Receptionist] Customer phone number entered: " + phoneNumber);
 
         // Steps 5–6: System searches and presents customer details
-        CustomerInfo customerInfo = controller.findCustomer(phoneNumber);
+        CustomerDTO customerInfo = controller.findCustomer(phoneNumber);
         if (customerInfo == null) {
             System.out.println("[System] Phone number not found in customer registry.");
             return;

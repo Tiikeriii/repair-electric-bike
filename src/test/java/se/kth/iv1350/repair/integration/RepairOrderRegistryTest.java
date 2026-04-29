@@ -2,7 +2,7 @@ package se.kth.iv1350.repair.integration;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import se.kth.iv1350.repair.model.CustomerInfo;
+import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.RepairOrder;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -18,7 +18,7 @@ public class RepairOrderRegistryTest {
     @BeforeEach
     public void setUp() {
         registry = new RepairOrderRegistry();
-        CustomerInfo customer = new CustomerInfo("Alice", 123, "a@b.com", "Trek", "FX3", "SN001");
+        CustomerDTO customer = new CustomerDTO("Alice", 123, "a@b.com", "Trek", "FX3", "SN001");
         orderA = new RepairOrder("A", customer, "Problem A");
         orderB = new RepairOrder("B", customer, "Problem B");
     }

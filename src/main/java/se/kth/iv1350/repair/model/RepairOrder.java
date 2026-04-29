@@ -8,7 +8,7 @@ import java.time.LocalDate;
  */
 public class RepairOrder {
     private final String orderId;
-    private final CustomerInfo customerInfo;
+    private final CustomerDTO customerInfo;
     private final String problemDescription;
     private final LocalDate date;
     private DiagnosticReport diagnosticReport;
@@ -21,7 +21,7 @@ public class RepairOrder {
      * @param customerInfo       The customer and bike information.
      * @param problemDescription The customer's description of the problem.
      */
-    public RepairOrder(String orderId, CustomerInfo customerInfo, String problemDescription) {
+    public RepairOrder(String orderId, CustomerDTO customerInfo, String problemDescription) {
         this.orderId = orderId;
         this.customerInfo = customerInfo;
         this.problemDescription = problemDescription;
@@ -59,7 +59,7 @@ public class RepairOrder {
     }
 
     /** @return The customer and bike information for this order. */
-    public CustomerInfo getCustomerInfo() {
+    public CustomerDTO getCustomerInfo() {
         return customerInfo;
     }
 

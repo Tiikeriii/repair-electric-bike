@@ -1,0 +1,11 @@
+se\kth\iv1350\repair\model\RepairOrderState.class
+se\kth\iv1350\repair\controller\RepairController.class
+se\kth\iv1350\repair\integration\RegistryCreator.class
+se\kth\iv1350\repair\integration\Printer.class
+se\kth\iv1350\repair\integration\CustomerRegistry.class
+se\kth\iv1350\repair\model\DiagnosticReport.class
+se\kth\iv1350\repair\model\RepairTask.class
+se\kth\iv1350\repair\startup\Main.class
+se\kth\iv1350\repair\model\RepairOrder.class
+se\kth\iv1350\repair\view\View.class
+se\kth\iv1350\repair\integration\RepairOrderRegistry.class

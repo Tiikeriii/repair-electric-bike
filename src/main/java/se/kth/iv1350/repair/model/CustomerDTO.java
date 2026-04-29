@@ -4,7 +4,7 @@ package se.kth.iv1350.repair.model;
  * Holds all information about a customer and their bike. 
  * This is a DTO for passing Customer information accross layers.
  */
-public class CustomerInfo {
+public class CustomerDTO {
     private final String name;
     private final int phoneNumber;
     private final String email;
@@ -22,7 +22,7 @@ public class CustomerInfo {
      * @param bikeModel        The model of the customer's bike.
      * @param bikeSerialNumber The serial number of the customer's bike.
      */
-    public CustomerInfo(String name, int phoneNumber, String email,
+    public CustomerDTO(String name, int phoneNumber, String email,
                         String bikeBrand, String bikeModel, String bikeSerialNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;

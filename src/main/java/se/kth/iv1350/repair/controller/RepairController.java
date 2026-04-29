@@ -4,7 +4,7 @@ import se.kth.iv1350.repair.integration.CustomerRegistry;
 import se.kth.iv1350.repair.integration.Printer;
 import se.kth.iv1350.repair.integration.RegistryCreator;
 import se.kth.iv1350.repair.integration.RepairOrderRegistry;
-import se.kth.iv1350.repair.model.CustomerInfo;
+import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.DiagnosticReport;
 import se.kth.iv1350.repair.model.RepairOrder;
 
@@ -37,7 +37,7 @@ public class RepairController {
      * @param phoneNumber The customer's phone number.
      * @return The found CustomerInfo, or null if the phone number is unknown.
      */
-    public CustomerInfo findCustomer(int phoneNumber) {
+    public CustomerDTO findCustomer(int phoneNumber) {
         return customerRegistry.findCustomer(phoneNumber);
     }
 
@@ -49,7 +49,7 @@ public class RepairController {
      * @param problemDescription The customer's description of the problem.
      * @return The newly created repair order.
      */
-    public RepairOrder createRepairOrder(CustomerInfo customerInfo, String problemDescription) {
+    public RepairOrder createRepairOrder(CustomerDTO customerInfo, String problemDescription) {
         String orderId = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
         currentRepairOrder = new RepairOrder(orderId, customerInfo, problemDescription);
         repairOrderRegistry.storeRepairOrder(currentRepairOrder);

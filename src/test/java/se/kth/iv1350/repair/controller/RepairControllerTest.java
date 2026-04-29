@@ -3,7 +3,7 @@ package se.kth.iv1350.repair.controller;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import se.kth.iv1350.repair.integration.RegistryCreator;
-import se.kth.iv1350.repair.model.CustomerInfo;
+import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.DiagnosticReport;
 import se.kth.iv1350.repair.model.RepairOrder;
 import se.kth.iv1350.repair.model.RepairOrderState;
@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class RepairControllerTest {
     private RepairController controller;
-    private CustomerInfo customerInfo;
+    private CustomerDTO customerInfo;
 
     @BeforeEach
     public void setUp() {
@@ -35,7 +35,7 @@ public class RepairControllerTest {
 
     @Test
     public void testFindUnknownCustomerReturnsNull() {
-        CustomerInfo unknown = controller.findCustomer(999999999);
+        CustomerDTO unknown = controller.findCustomer(999999999);
         assertNull(unknown,
                 "findCustomer with an unknown phone number should return null");
     }
