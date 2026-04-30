@@ -1,6 +1,7 @@
 package se.kth.iv1350.repair.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -33,6 +34,11 @@ public class DiagnosticReport {
             total += task.getCost();
         }
         return total;
+    }
+
+    /** @return An unmodifiable view of the proposed repair tasks. */
+    public List<RepairTask> getRepairTasks() {
+        return Collections.unmodifiableList(repairTasks);
     }
 
     /** @return A formatted string with findings, all tasks and total cost. */

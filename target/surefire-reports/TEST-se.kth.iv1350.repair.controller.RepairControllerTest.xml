@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.309" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.311" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.13.11-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Joel\AppData\Local\Temp\surefire2982663472361980619\surefirebooter-20260429155353400_3.jar C:\Users\Joel\AppData\Local\Temp\surefire2982663472361980619 2026-04-29T15-53-53_037-jvmRun1 surefire-20260429155353400_1tmp surefire_0-20260429155353400_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Joel\AppData\Local\Temp\surefire7156214871197312344\surefirebooter-20260430101843270_3.jar C:\Users\Joel\AppData\Local\Temp\surefire7156214871197312344 2026-04-30T10-18-42_871-jvmRun1 surefire-20260430101843270_1tmp surefire_0-20260430101843270_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\target\test-classes;C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\target\classes;C:\Users\Joel\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\Joel\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Joel\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Joel\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Joel\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Joel\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\Joel\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Joel\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Joel\AppData\Local\Temp\surefire2982663472361980619\surefirebooter-20260429155353400_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Joel\AppData\Local\Temp\surefire7156214871197312344\surefirebooter-20260430101843270_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.13+11"/>
@@ -58,17 +58,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testFindKnownCustomerReturnsNonNull" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.064"/>
-  <testcase name="testCreatedOrderHasStateNewlyCreated" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.145"/>
-  <testcase name="testRejectRepairOrderChangesStateToRejected" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.005"/>
-  <testcase name="testFindUnknownCustomerReturnsNull" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.001"/>
+  <testcase name="testFindKnownCustomerReturnsNonNull" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.062"/>
+  <testcase name="testCreatedOrderHasStateNewlyCreated" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.147"/>
+  <testcase name="testRejectRepairOrderChangesStateToRejected" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.003"/>
+  <testcase name="testFindUnknownCustomerReturnsNull" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.003"/>
   <testcase name="testGetRepairOrderReturnsNullWhenQueueIsEmpty" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.002"/>
-  <testcase name="testGetRepairOrderReturnsCreatedOrder" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.002"/>
-  <testcase name="testAcceptRepairOrderChangesStateToAccepted" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.029">
+  <testcase name="testGetRepairOrderReturnsCreatedOrder" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.003"/>
+  <testcase name="testAcceptRepairOrderChangesStateToAccepted" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.033">
     <system-out><![CDATA[
 [PRINTER OUTPUT]
-=== REPAIR ORDER F684FE09 ===
-Date: 2026-04-29
+=== REPAIR ORDER 37F7D6B3 ===
+Date: 2026-04-30
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -77,12 +77,12 @@ State: ACCEPTED
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-06
+Estimated completion: 2026-05-07
 =========================
 [END OF PRINTOUT]
 
 ]]></system-out>
   </testcase>
   <testcase name="testCreateRepairOrderReturnsOrder" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.002"/>
-  <testcase name="testAddDiagnosticReportChangesState" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.002"/>
+  <testcase name="testAddDiagnosticReportChangesState" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.001"/>
 </testsuite>

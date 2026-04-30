@@ -3,6 +3,7 @@ package se.kth.iv1350.repair.integration;
 import se.kth.iv1350.repair.model.RepairOrder;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Deque;
 import java.util.List;
 
@@ -39,6 +40,6 @@ public class RepairOrderRegistry {
      * @return All repair orders in the registry.
      */
     public List<RepairOrder> getAllOrders() {
-        return allOrders;
+        return Collections.unmodifiableList(allOrders);
     }
 }

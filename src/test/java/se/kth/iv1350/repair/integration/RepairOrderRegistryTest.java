@@ -54,4 +54,14 @@ public class RepairOrderRegistryTest {
         assertEquals(2, registry.getAllOrders().size(),
                 "All orders should remain in the registry even after retrieval from queue");
     }
+
+    @Test
+    public void testGetAllOrdersIsUnmodifiable() {
+        registry.storeRepairOrder(orderA);
+        CustomerDTO c = new CustomerDTO("Bob", 999, "b@b.com", "Giant", "E+", "SN999");
+        RepairOrder orderC = new RepairOrder("C", c, "Problem C");
+        assertThrows(UnsupportedOperationException.class,
+                () -> registry.getAllOrders().add(orderC),
+                "The all-orders list should be unmodifiable");
+    }
 }
