@@ -1,6 +1,8 @@
 package se.kth.iv1350.repair.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Represents a repair order containing customer info, bike details,
@@ -8,7 +10,7 @@ import java.time.LocalDate;
  */
 public class RepairOrder {
     private final String orderId;
-    private final CustomerDTO customerInfo;
+    private final Customer customer;
     private final String problemDescription;
     private final LocalDate date;
     private DiagnosticReport diagnosticReport;
@@ -18,12 +20,12 @@ public class RepairOrder {
      * Creates a newly created repair order.
      *
      * @param orderId            A unique identifier for this order.
-     * @param customerInfo       The customer and bike information.
+     * @param customer           The customer and bike information.
      * @param problemDescription The customer's description of the problem.
      */
-    public RepairOrder(String orderId, CustomerDTO customerInfo, String problemDescription) {
+    public RepairOrder(String orderId, Customer customer, String problemDescription) {
         this.orderId = orderId;
-        this.customerInfo = customerInfo;
+        this.customer = customer;
         this.problemDescription = problemDescription;
         this.date = LocalDate.now();
         this.state = RepairOrderState.NEWLY_CREATED;
@@ -53,24 +55,14 @@ public class RepairOrder {
         this.state = RepairOrderState.REJECTED;
     }
 
+    /** @return The current state of this repair order. */
+    public RepairOrderState getState() {
+        return state;
+    }
+
     /** @return The unique identifier of this repair order. */
     public String getOrderId() {
         return orderId;
-    }
-
-    /** @return The customer and bike information for this order. */
-    public CustomerDTO getCustomerInfo() {
-        return customerInfo;
-    }
-
-    /** @return The customer's description of the problem. */
-    public String getProblemDescription() {
-        return problemDescription;
-    }
-
-    /** @return The date this repair order was created. */
-    public LocalDate getDate() {
-        return date;
     }
 
     /** @return The diagnostic report, or null if not yet added. */
@@ -78,25 +70,55 @@ public class RepairOrder {
         return diagnosticReport;
     }
 
-    /** @return The current state of this repair order. */
-    public RepairOrderState getState() {
-        return state;
+    /** @return The date this repair order was created. */
+    public LocalDate getDate() {
+        return date;
     }
 
-    /** @return A formatted string with all repair order data, suitable for printing. */
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("=== REPAIR ORDER ").append(orderId).append(" ===\n");
-        sb.append("Date: ").append(date).append("\n");
-        sb.append(customerInfo).append("\n");
-        sb.append("Problem: ").append(problemDescription).append("\n");
-        sb.append("State: ").append(state).append("\n");
-        if (diagnosticReport != null) {
-            sb.append("--- Diagnostic Report ---\n").append(diagnosticReport).append("\n");
-            sb.append("Estimated completion: ").append(date.plusDays(7)).append("\n");
+    /** @return The customer for this repair order. */
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    /** @return The customer's description of the problem. */
+    public String getProblemDescription() {
+        return problemDescription;
+    }
+
+        /**
+     * Creates a RepairOrderDTO containing all data needed by the view to
+     * display this repair order.
+     *
+     * @return A RepairOrderDTO representing the current state of this order.
+     */
+    public RepairOrderDTO toDTO() {
+        CustomerDTO customerDTO = customer.toDTO();
+        if (diagnosticReport == null) {
+            return new RepairOrderDTO(
+                    orderId,
+                    customerDTO,
+                    problemDescription,
+                    date.toString(),
+                    state.toString()
+            );
         }
-        sb.append("=========================");
-        return sb.toString();
+        List<String> taskDescriptions = new ArrayList<>();
+        List<Double> taskCosts = new ArrayList<>();
+        for (RepairTask task : diagnosticReport.getRepairTasks()) {
+            taskDescriptions.add(task.getDescription());
+            taskCosts.add(task.getCost());
+        }
+        return new RepairOrderDTO(
+                orderId,
+                customerDTO,
+                problemDescription,
+                date.toString(),
+                state.toString(),
+                diagnosticReport.getFindings(),
+                taskDescriptions,
+                taskCosts,
+                diagnosticReport.getTotalCost(),
+                date.plusDays(7).toString()
+        );
     }
 }

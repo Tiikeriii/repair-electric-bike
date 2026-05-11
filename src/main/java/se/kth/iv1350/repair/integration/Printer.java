@@ -1,21 +1,20 @@
 package se.kth.iv1350.repair.integration;
 
-import se.kth.iv1350.repair.model.RepairOrder;
-
 /**
- * Responsible for printing repair orders.
+ * Responsible for printing repair orders. In a real system this class would
+ * communicate with a physical printer. Here, output goes to System.out.
  */
 public class Printer {
 
     /**
      * Prints a repair order to System.out. The printout contains all repair
-     * order data.
+     * order data including estimated completion date.
      *
-     * @param repairOrder The repair order to print.
+     * @param repairOrderDTO The repair order data to print.
      */
-    public void printRepairOrder(RepairOrder repairOrder) {
+    public void printRepairOrder(String formattedRepairOrder) {
         System.out.println("\n[PRINTER OUTPUT]");
-        System.out.println(repairOrder);
+        System.out.println(formattedRepairOrder);
         System.out.println("[END OF PRINTOUT]\n");
     }
 }

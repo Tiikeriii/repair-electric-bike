@@ -4,10 +4,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import se.kth.iv1350.repair.integration.RegistryCreator;
 import se.kth.iv1350.repair.model.CustomerDTO;
-import se.kth.iv1350.repair.model.DiagnosticReport;
-import se.kth.iv1350.repair.model.RepairOrder;
-import se.kth.iv1350.repair.model.RepairOrderState;
-import se.kth.iv1350.repair.model.RepairTask;
+import se.kth.iv1350.repair.model.RepairOrderDTO;
+import se.kth.iv1350.repair.model.RepairTaskDTO;
 
 import java.util.Arrays;
 import java.util.List;
@@ -30,7 +28,7 @@ public class RepairControllerTest {
     @Test
     public void testFindKnownCustomerReturnsNonNull() {
         assertNotNull(customerInfo,
-                "findCustomer with a known phone number should return a CustomerInfo");
+                "findCustomer with a known phone number should return a CustomerDTO");
     }
 
     @Test
@@ -41,29 +39,29 @@ public class RepairControllerTest {
     }
 
     @Test
-    public void testCreateRepairOrderReturnsOrder() {
-        RepairOrder order = controller.createRepairOrder(customerInfo, "Bike won't start");
-        assertNotNull(order, "createRepairOrder should return a non-null RepairOrder");
+    public void testCreateRepairOrderReturnsDTO() {
+        RepairOrderDTO order = controller.createRepairOrder(customerInfo, "Bike won't start");
+        assertNotNull(order, "createRepairOrder should return a non-null RepairOrderDTO");
     }
 
     @Test
     public void testCreatedOrderHasStateNewlyCreated() {
-        RepairOrder order = controller.createRepairOrder(customerInfo, "Bike won't start");
-        assertEquals(RepairOrderState.NEWLY_CREATED, order.getState(),
+        RepairOrderDTO order = controller.createRepairOrder(customerInfo, "Bike won't start");
+        assertEquals("NEWLY_CREATED", order.getState(),
                 "A newly created order should have state NEWLY_CREATED");
     }
 
     @Test
     public void testGetRepairOrderReturnsCreatedOrder() {
-        RepairOrder created = controller.createRepairOrder(customerInfo, "Problem");
-        RepairOrder retrieved = controller.getRepairOrder();
+        RepairOrderDTO created = controller.createRepairOrder(customerInfo, "Problem");
+        RepairOrderDTO retrieved = controller.getRepairOrder();
         assertEquals(created.getOrderId(), retrieved.getOrderId(),
                 "getRepairOrder should return the previously created order");
     }
 
     @Test
     public void testGetRepairOrderReturnsNullWhenQueueIsEmpty() {
-        RepairOrder result = controller.getRepairOrder();
+        RepairOrderDTO result = controller.getRepairOrder();
         assertNull(result, "getRepairOrder should return null when no orders are queued");
     }
 
@@ -71,10 +69,9 @@ public class RepairControllerTest {
     public void testAddDiagnosticReportChangesState() {
         controller.createRepairOrder(customerInfo, "Problem");
         controller.getRepairOrder();
-        List<RepairTask> tasks = Arrays.asList(new RepairTask("Fix motor", 500.0));
-        DiagnosticReport report = new DiagnosticReport("Motor fault", tasks);
-        RepairOrder updated = controller.addDiagnosticReport(report);
-        assertEquals(RepairOrderState.READY_FOR_APPROVAL, updated.getState(),
+        List<RepairTaskDTO> tasks = Arrays.asList(new RepairTaskDTO("Fix motor", 500.0));
+        RepairOrderDTO updated = controller.addDiagnosticReport("Motor fault", tasks);
+        assertEquals("READY_FOR_APPROVAL", updated.getState(),
                 "State should be READY_FOR_APPROVAL after diagnostic report is added");
     }
 
@@ -82,10 +79,10 @@ public class RepairControllerTest {
     public void testAcceptRepairOrderChangesStateToAccepted() {
         controller.createRepairOrder(customerInfo, "Problem");
         controller.getRepairOrder();
-        List<RepairTask> tasks = Arrays.asList(new RepairTask("Fix motor", 500.0));
-        controller.addDiagnosticReport(new DiagnosticReport("Motor fault", tasks));
-        RepairOrder accepted = controller.acceptRepairOrder();
-        assertEquals(RepairOrderState.ACCEPTED, accepted.getState(),
+        List<RepairTaskDTO> tasks = Arrays.asList(new RepairTaskDTO("Fix motor", 500.0));
+        controller.addDiagnosticReport("Motor fault", tasks);
+        RepairOrderDTO accepted = controller.acceptRepairOrder();
+        assertEquals("ACCEPTED", accepted.getState(),
                 "State should be ACCEPTED after acceptRepairOrder is called");
     }
 
@@ -93,10 +90,18 @@ public class RepairControllerTest {
     public void testRejectRepairOrderChangesStateToRejected() {
         controller.createRepairOrder(customerInfo, "Problem");
         controller.getRepairOrder();
-        List<RepairTask> tasks = Arrays.asList(new RepairTask("Fix motor", 500.0));
-        controller.addDiagnosticReport(new DiagnosticReport("Motor fault", tasks));
-        RepairOrder rejected = controller.rejectRepairOrder();
-        assertEquals(RepairOrderState.REJECTED, rejected.getState(),
+        List<RepairTaskDTO> tasks = Arrays.asList(new RepairTaskDTO("Fix motor", 500.0));
+        controller.addDiagnosticReport("Motor fault", tasks);
+        RepairOrderDTO rejected = controller.rejectRepairOrder();
+        assertEquals("REJECTED", rejected.getState(),
                 "State should be REJECTED after rejectRepairOrder is called");
+    }
+
+    @Test
+    public void testCreatedOrderContainsCorrectProblemDescription() {
+        String problem = "Bike won't start";
+        RepairOrderDTO order = controller.createRepairOrder(customerInfo, problem);
+        assertEquals(problem, order.getProblemDescription(),
+                "The repair order should contain the correct problem description");
     }
 }

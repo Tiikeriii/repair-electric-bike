@@ -13,12 +13,12 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class RepairOrderTest {
     private RepairOrder repairOrder;
-    private CustomerDTO customerInfo;
+    private Customer customer;
 
     @BeforeEach
     public void setUp() {
-        customerInfo = new CustomerDTO("Alice", 123, "a@b.com", "Trek", "FX3", "SN001");
-        repairOrder = new RepairOrder("ORD-001", customerInfo, "Bike won't start");
+        customer = new Customer("Alice", 123, "a@b.com", "Trek", "FX3", "SN001");
+        repairOrder = new RepairOrder("ORD-001", customer, "Bike won't start");
     }
 
     @Test
@@ -71,6 +71,30 @@ public class RepairOrderTest {
 
     @Test
     public void testDateIsSetOnCreation() {
-        assertNotNull(repairOrder.getDate(), "Creation date should be set automatically");
+        assertNotNull(repairOrder.getDate(),
+                "Creation date should be set automatically");
+    }
+
+    @Test
+    public void testToDTOWithoutDiagnosticReport() {
+        RepairOrderDTO dto = repairOrder.toDTO();
+        assertFalse(dto.hasDiagnosticReport(),
+                "DTO should not have a diagnostic report when none has been added");
+    }
+
+    @Test
+    public void testToDTOWithDiagnosticReportContainsFindings() {
+        List<RepairTask> tasks = Arrays.asList(new RepairTask("Fix motor", 500.0));
+        repairOrder.addDiagnosticReport(new DiagnosticReport("Motor fault", tasks));
+        RepairOrderDTO dto = repairOrder.toDTO();
+        assertEquals("Motor fault", dto.getDiagnosticFindings(),
+                "DTO should contain the correct diagnostic findings");
+    }
+
+    @Test
+    public void testToDTOContainsCorrectState() {
+        RepairOrderDTO dto = repairOrder.toDTO();
+        assertEquals("NEWLY_CREATED", dto.getState(),
+                "DTO state should match the repair order state");
     }
 }

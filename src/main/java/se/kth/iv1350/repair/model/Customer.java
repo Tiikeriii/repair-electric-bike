@@ -1,9 +1,10 @@
 package se.kth.iv1350.repair.model;
 
 /**
- * Data transfer object carrying customer and bike information between layers.
+ * Represents a customer and their bike in the domain model.
+ * This class is internal to the model and integration layers.
  */
-public class CustomerDTO {
+public class Customer {
     private final String name;
     private final int phoneNumber;
     private final String email;
@@ -12,7 +13,7 @@ public class CustomerDTO {
     private final String bikeSerialNumber;
 
     /**
-     * Creates a new CustomerDTO with the specified customer and bike details.
+     * Creates a new Customer with the specified details.
      *
      * @param name             The customer's name.
      * @param phoneNumber      The customer's phone number.
@@ -21,8 +22,8 @@ public class CustomerDTO {
      * @param bikeModel        The model of the customer's bike.
      * @param bikeSerialNumber The serial number of the customer's bike.
      */
-    public CustomerDTO(String name, int phoneNumber, String email,
-                       String bikeBrand, String bikeModel, String bikeSerialNumber) {
+    public Customer(String name, int phoneNumber, String email,
+                    String bikeBrand, String bikeModel, String bikeSerialNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.email = email;
@@ -34,11 +35,11 @@ public class CustomerDTO {
     /** @return The customer's name. */
     public String getName() {
         return name;
-    }
+        }
 
     /** @return The customer's phone number. */
     public int getPhoneNumber() {
-        return phoneNumber; 
+        return phoneNumber;
     }
 
     /** @return The customer's email address. */
@@ -59,5 +60,14 @@ public class CustomerDTO {
     /** @return The serial number of the customer's bike. */
     public String getBikeSerialNumber() {
         return bikeSerialNumber;
+    }
+
+    /**
+     * Creates a CustomerDTO containing all customer data for use outside the model layer.
+     *
+     * @return A CustomerDTO representing this customer.
+     */
+    public CustomerDTO toDTO() {
+        return new CustomerDTO(name, phoneNumber, email, bikeBrand, bikeModel, bikeSerialNumber);
     }
 }

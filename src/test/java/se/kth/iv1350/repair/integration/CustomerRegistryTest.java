@@ -18,9 +18,9 @@ public class CustomerRegistryTest {
     }
 
     @Test
-    public void testFindKnownCustomerReturnsCustomerInfo() {
+    public void testFindKnownCustomerReturnsNonNull() {
         CustomerDTO result = registry.findCustomer(123456789);
-        assertNotNull(result, "A known phone number should return a CustomerInfo object");
+        assertNotNull(result, "A known phone number should return a CustomerDTO");
     }
 
     @Test

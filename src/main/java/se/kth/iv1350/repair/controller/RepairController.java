@@ -4,10 +4,16 @@ import se.kth.iv1350.repair.integration.CustomerRegistry;
 import se.kth.iv1350.repair.integration.Printer;
 import se.kth.iv1350.repair.integration.RegistryCreator;
 import se.kth.iv1350.repair.integration.RepairOrderRegistry;
+import se.kth.iv1350.repair.model.Customer;
 import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.DiagnosticReport;
 import se.kth.iv1350.repair.model.RepairOrder;
+import se.kth.iv1350.repair.model.RepairOrderDTO;
+import se.kth.iv1350.repair.model.RepairTask;
+import se.kth.iv1350.repair.model.RepairTaskDTO;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -35,7 +41,7 @@ public class RepairController {
      * Searches for a customer in the customer registry by phone number.
      *
      * @param phoneNumber The customer's phone number.
-     * @return The found CustomerInfo, or null if the phone number is unknown.
+     * @return A CustomerDTO if found, or null if the phone number is unknown.
      */
     public CustomerDTO findCustomer(int phoneNumber) {
         return customerRegistry.findCustomer(phoneNumber);
@@ -45,58 +51,78 @@ public class RepairController {
      * Creates a new repair order for the given customer with the given problem description.
      * The order is stored in the repair order registry.
      *
-     * @param customerInfo       The customer's information.
+     * @param customerDTO        The customer's information as a DTO from the view.
      * @param problemDescription The customer's description of the problem.
-     * @return The newly created repair order.
+     * @return A RepairOrderDTO representing the newly created repair order.
      */
-    public RepairOrder createRepairOrder(CustomerDTO customerInfo, String problemDescription) {
+    public RepairOrderDTO createRepairOrder(CustomerDTO customerDTO, String problemDescription) {
+        Customer customer = new Customer(
+                customerDTO.getName(),
+                customerDTO.getPhoneNumber(),
+                customerDTO.getEmail(),
+                customerDTO.getBikeBrand(),
+                customerDTO.getBikeModel(),
+                customerDTO.getBikeSerialNumber()
+        );
         String orderId = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
-        currentRepairOrder = new RepairOrder(orderId, customerInfo, problemDescription);
+        currentRepairOrder = new RepairOrder(orderId, customer, problemDescription);
         repairOrderRegistry.storeRepairOrder(currentRepairOrder);
-        return currentRepairOrder;
+        return currentRepairOrder.toDTO();
     }
 
     /**
      * Retrieves the next repair order from the registry for a technician to process.
      *
-     * @return The next repair order, or null if there are none waiting.
+     * @return A RepairOrderDTO representing the next repair order, or null if none waiting.
      */
-    public RepairOrder getRepairOrder() {
+    public RepairOrderDTO getRepairOrder() {
         currentRepairOrder = repairOrderRegistry.getNextRepairOrder();
-        return currentRepairOrder;
+        if (currentRepairOrder == null) {
+            return null;
+        }
+        return currentRepairOrder.toDTO();
     }
 
     /**
      * Adds a diagnostic report and proposed repair tasks to the current repair order.
      *
-     * @param report The diagnostic report produced by the technician.
-     * @return The updated repair order.
+     * @param findings The technician's findings.
+     * @param taskDTOs The list of proposed repair tasks as DTOs from the view.
+     * @return A RepairOrderDTO representing the updated repair order.
      */
-    public RepairOrder addDiagnosticReport(DiagnosticReport report) {
+    public RepairOrderDTO addDiagnosticReport(String findings, List<RepairTaskDTO> taskDTOs) {
+        List<RepairTask> repairTasks = new ArrayList<>();
+        for (RepairTaskDTO dto : taskDTOs) {
+            repairTasks.add(new RepairTask(dto.getDescription(), dto.getCost()));
+        }
+        DiagnosticReport report = new DiagnosticReport(findings, repairTasks);
         currentRepairOrder.addDiagnosticReport(report);
-        return currentRepairOrder;
+        return currentRepairOrder.toDTO();
     }
 
     /**
      * Registers that the customer has accepted the repair order.
      * The repair order is printed after acceptance.
      *
-     * @return The accepted repair order.
+     * @return A RepairOrderDTO representing the accepted repair order.
      */
-    public RepairOrder acceptRepairOrder() {
+    public RepairOrderDTO acceptRepairOrder() {
         currentRepairOrder.accept();
-        printer.printRepairOrder(currentRepairOrder);
-        return currentRepairOrder;
+        return currentRepairOrder.toDTO();
     }
 
     /**
      * Registers that the customer has rejected the repair order.
      * The order is kept in the registry but marked as rejected.
      *
-     * @return The rejected repair order.
+     * @return A RepairOrderDTO representing the rejected repair order.
      */
-    public RepairOrder rejectRepairOrder() {
+    public RepairOrderDTO rejectRepairOrder() {
         currentRepairOrder.reject();
-        return currentRepairOrder;
+        return currentRepairOrder.toDTO();
+    }
+
+    public void printRepairOrder(String formattedRepairOrder) {
+        printer.printRepairOrder(formattedRepairOrder);
     }
 }

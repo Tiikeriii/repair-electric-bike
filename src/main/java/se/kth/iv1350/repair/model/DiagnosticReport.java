@@ -36,20 +36,8 @@ public class DiagnosticReport {
         return total;
     }
 
-    /** @return An unmodifiable view of the proposed repair tasks. */
+        /** @return An unmodifiable view of the proposed repair tasks. */
     public List<RepairTask> getRepairTasks() {
         return Collections.unmodifiableList(repairTasks);
-    }
-
-    /** @return A formatted string with findings, all tasks and total cost. */
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Findings: ").append(findings).append("\n");
-        for (RepairTask task : repairTasks) {
-            sb.append("  - ").append(task).append("\n");
-        }
-        sb.append("Total cost: ").append(getTotalCost()).append(" SEK");
-        return sb.toString();
     }
 }

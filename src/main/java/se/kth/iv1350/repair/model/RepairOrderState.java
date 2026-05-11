@@ -9,5 +9,5 @@ public enum RepairOrderState {
     REJECTED,
     ACCEPTED,
     COMPLETED,
-    PAID,
+    PAID
 }

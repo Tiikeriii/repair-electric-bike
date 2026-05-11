@@ -1,12 +1,15 @@
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\controller\RepairController.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\integration\CustomerRegistry.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\integration\Printer.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\integration\RegistryCreator.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\integration\RepairOrderRegistry.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\model\CustomerDTO.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\model\DiagnosticReport.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\model\RepairOrder.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\model\RepairOrderState.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\model\RepairTask.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\startup\Main.java
-C:\Users\Joel\KTH\Object-Oriented Design\repair-electric-bike\src\main\java\se\kth\iv1350\repair\view\View.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\controller\RepairController.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\integration\CustomerRegistry.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\integration\Printer.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\integration\RegistryCreator.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\integration\RepairOrderRegistry.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\model\Customer.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\model\CustomerDTO.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\model\DiagnosticReport.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\model\RepairOrder.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\model\RepairOrderDTO.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\model\RepairOrderState.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\model\RepairTask.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\model\RepairTaskDTO.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\startup\Main.java
+C:\Users\joelc\KTH\Object-Oriented Design\Seminar 3\src\main\java\se\kth\iv1350\repair\view\View.java
