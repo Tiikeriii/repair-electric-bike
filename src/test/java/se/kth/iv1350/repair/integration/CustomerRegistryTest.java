@@ -18,49 +18,51 @@ public class CustomerRegistryTest {
     }
 
     @Test
-    public void testFindKnownCustomerReturnsNonNull() {
+    public void testFindKnownCustomerReturnsNonNull() throws CustomerNotFoundException, DatabaseFailureException {
         CustomerDTO result = registry.findCustomer(123456789);
         assertNotNull(result, "A known phone number should return a CustomerDTO");
     }
 
     @Test
-    public void testFindUnknownCustomerReturnsNull() {
-        CustomerDTO result = registry.findCustomer(000000000);
-        assertNull(result, "An unknown phone number should return null");
+    public void testFindUnknownCustomerThrowsException() {
+        CustomerRegistry registry = new CustomerRegistry();
+        assertThrows(CustomerNotFoundException.class, () -> {
+            registry.findCustomer(999999999);
+        }, "Should throw CustomerNotFoundException for unknown phone number");
     }
 
     @Test
-    public void testFindKnownCustomerReturnsCorrectName() {
+    public void testFindKnownCustomerReturnsCorrectName() throws CustomerNotFoundException, DatabaseFailureException {
         CustomerDTO result = registry.findCustomer(123456789);
         assertEquals("Alice Svensson", result.getName(), "Name should match");
     }
 
     @Test
-    public void testFindKnownCustomerReturnsCorrectPhoneNumber() {
+    public void testFindKnownCustomerReturnsCorrectPhoneNumber() throws CustomerNotFoundException, DatabaseFailureException {
         CustomerDTO result = registry.findCustomer(123456789);
         assertEquals(123456789, result.getPhoneNumber(), "Phone number should match");
     }
 
     @Test
-    public void testFindKnownCustomerReturnsCorrectEmail() {
+    public void testFindKnownCustomerReturnsCorrectEmail() throws CustomerNotFoundException, DatabaseFailureException {
         CustomerDTO result = registry.findCustomer(123456789);
         assertEquals("alice@example.com", result.getEmail(), "Email should match");
     }
 
     @Test
-    public void testFindKnownCustomerReturnsCorrectBikeBrand() {
+    public void testFindKnownCustomerReturnsCorrectBikeBrand() throws CustomerNotFoundException, DatabaseFailureException {
         CustomerDTO result = registry.findCustomer(123456789);
         assertEquals("Trek", result.getBikeBrand(), "Bike brand should match");
     }
 
     @Test
-    public void testFindKnownCustomerReturnsCorrectBikeModel() {
+    public void testFindKnownCustomerReturnsCorrectBikeModel() throws CustomerNotFoundException, DatabaseFailureException {
         CustomerDTO result = registry.findCustomer(123456789);
         assertEquals("Powerfly 5", result.getBikeModel(), "Bike model should match");
     }
 
     @Test
-    public void testFindKnownCustomerReturnsCorrectBikeSerialNumber() {
+    public void testFindKnownCustomerReturnsCorrectBikeSerialNumber() throws CustomerNotFoundException, DatabaseFailureException {
         CustomerDTO result = registry.findCustomer(123456789);
         assertEquals("SN-2024-XR7", result.getBikeSerialNumber(), "Serial number should match");
     }

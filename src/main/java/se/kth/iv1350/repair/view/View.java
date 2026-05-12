@@ -1,6 +1,8 @@
 package se.kth.iv1350.repair.view;
 
 import se.kth.iv1350.repair.controller.RepairController;
+import se.kth.iv1350.repair.integration.CustomerNotFoundException;
+import se.kth.iv1350.repair.integration.DatabaseFailureException;
 import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.RepairOrderDTO;
 import se.kth.iv1350.repair.model.RepairTaskDTO;
@@ -31,6 +33,7 @@ public class View {
      * technician diagnostic, customer acceptance, and printout.
      */
     private void runBasicFlow() {
+        final CustomerDTO customerInfo;
         System.out.println("=== Repair Electric Bike — Basic Flow Simulation ===\n");
 
         // Steps 2-4: Receptionist enters customer's phone number
@@ -38,9 +41,14 @@ public class View {
         System.out.println("[Receptionist] Customer phone number entered: " + phoneNumber);
 
         // Steps 5-6: System searches and presents customer details
-        CustomerDTO customerInfo = controller.findCustomer(phoneNumber);
-        if (customerInfo == null) {
-            System.out.println("[System] Phone number not found in customer registry.");
+        try {
+            customerInfo = controller.findCustomer(phoneNumber);
+        } catch (CustomerNotFoundException e) {
+            System.out.println("[System] No customer found with phone number: " + phoneNumber + ". Please try again.");
+            return;
+        } catch (DatabaseFailureException e) {
+            System.out.println("[System] The system is currently unavailable, please contact support.");
+            controller.logError(e);
             return;
         }
         System.out.println("[System] Customer found:");

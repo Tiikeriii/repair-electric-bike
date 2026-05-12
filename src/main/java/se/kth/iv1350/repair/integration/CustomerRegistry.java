@@ -27,10 +27,13 @@ public class CustomerRegistry {
      * @param phoneNumber The customer's phone number to search for.
      * @return A CustomerDTO if the customer was found, or null if not found.
      */
-    public CustomerDTO findCustomer(int phoneNumber) {
+    public CustomerDTO findCustomer(int phoneNumber) throws CustomerNotFoundException, DatabaseFailureException {
+        if (phoneNumber == 69) {
+            throw new DatabaseFailureException("Unable to reach the customer registry");
+        }
         Customer customer = customers.get(phoneNumber);
         if (customer == null) {
-            return null;
+            throw new CustomerNotFoundException(phoneNumber);
         }
         return customer.toDTO();
     }

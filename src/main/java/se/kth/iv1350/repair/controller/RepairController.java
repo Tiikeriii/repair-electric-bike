@@ -1,6 +1,9 @@
 package se.kth.iv1350.repair.controller;
 
+import se.kth.iv1350.repair.integration.FileLogger;
+import se.kth.iv1350.repair.integration.CustomerNotFoundException;
 import se.kth.iv1350.repair.integration.CustomerRegistry;
+import se.kth.iv1350.repair.integration.DatabaseFailureException;
 import se.kth.iv1350.repair.integration.Printer;
 import se.kth.iv1350.repair.integration.RegistryCreator;
 import se.kth.iv1350.repair.integration.RepairOrderRegistry;
@@ -43,7 +46,7 @@ public class RepairController {
      * @param phoneNumber The customer's phone number.
      * @return A CustomerDTO if found, or null if the phone number is unknown.
      */
-    public CustomerDTO findCustomer(int phoneNumber) {
+    public CustomerDTO findCustomer(int phoneNumber) throws CustomerNotFoundException, DatabaseFailureException {
         return customerRegistry.findCustomer(phoneNumber);
     }
 
@@ -124,5 +127,9 @@ public class RepairController {
 
     public void printRepairOrder(String formattedRepairOrder) {
         printer.printRepairOrder(formattedRepairOrder);
+    }
+
+    public void logError(Exception e) {
+        new FileLogger().log(e);
     }
 }
