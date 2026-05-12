@@ -1,0 +1,12 @@
+target/test-classes/se/kth/iv1350/repair/integration/CustomerRegistryTest.class
+target/surefire-reports/TEST-se.kth.iv1350.repair.model.RepairOrderTest.xml
+target/test-classes/se/kth/iv1350/repair/integration/CustomerRegistryTest.class
+target/surefire-reports/TEST-se.kth.iv1350.repair.model.RepairOrderTest.xml
+target/surefire-reports/TEST-se.kth.iv1350.repair.model.DiagnosticReportTest.xml
+target/surefire-reports/TEST-se.kth.iv1350.repair.integration.RepairOrderRegistryTest.xml
+target/surefire-reports/TEST-se.kth.iv1350.repair.integration.CustomerRegistryTest.xml
+target/surefire-reports/TEST-se.kth.iv1350.repair.controller.RepairControllerTest.xml
+target/surefire-reports/se.kth.iv1350.repair.model.DiagnosticReportTest.txt
+target/surefire-reports/se.kth.iv1350.repair.integration.CustomerRegistryTest.txt
+target/surefire-reports/se.kth.iv1350.repair.controller.RepairControllerTest.txt
+*.xml
