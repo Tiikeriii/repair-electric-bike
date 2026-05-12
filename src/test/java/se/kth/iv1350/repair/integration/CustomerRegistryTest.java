@@ -32,6 +32,26 @@ public class CustomerRegistryTest {
     }
 
     @Test
+    public void testDatabaseFailureThrowsException() {
+    CustomerRegistry registry = new CustomerRegistry();
+    assertThrows(DatabaseFailureException.class, () -> {
+        registry.findCustomer(69);
+    }, "Should throw DatabaseFailureException when database is unavailable");
+}
+
+@Test
+    public void testCustomerNotFoundExceptionContainsPhoneNumber() {
+    CustomerRegistry registry = new CustomerRegistry();
+    CustomerNotFoundException exception = assertThrows(
+            CustomerNotFoundException.class, () -> {
+                registry.findCustomer(999999999);
+            }, "Should throw CustomerNotFoundException for unknown phone number");
+    
+    assertTrue(exception.getMessage().contains("999999999"),
+            "Exception message should contain the phone number that was searched");
+}
+
+    @Test
     public void testFindKnownCustomerReturnsCorrectName() throws CustomerNotFoundException, DatabaseFailureException {
         CustomerDTO result = registry.findCustomer(123456789);
         assertEquals("Alice Svensson", result.getName(), "Name should match");
