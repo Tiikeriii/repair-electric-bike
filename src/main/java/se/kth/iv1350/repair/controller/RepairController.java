@@ -122,6 +122,11 @@ public class RepairController {
         return currentRepairOrder.toDTO();
     }
 
+    /**
+     * Prints the formatted repair order
+     * 
+     * @param fromattedRepairORder The formatted repair order
+     */
     public void printRepairOrder(String formattedRepairOrder) {
         printer.printRepairOrder(formattedRepairOrder);
     }
