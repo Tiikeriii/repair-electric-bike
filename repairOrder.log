@@ -1,0 +1,34 @@
+2026-05-13T13:07:56.108596600 === REPAIR ORDER F4EDFDB9 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike loses power after approximately 5 km of riding.
+State: NEWLY_CREATED
+=========================
+
+2026-05-13T13:07:56.115879100 === REPAIR ORDER F4EDFDB9 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike loses power after approximately 5 km of riding.
+State: READY_FOR_APPROVAL
+Findings: Battery cells show degradation. BMS fault code detected. Drivetrain needs service.
+  - Replace battery management system (BMS) - Cost: 1500.0 SEK
+  - Clean and lubricate drivetrain - Cost: 350.0 SEK
+Total cost: 1850.0 SEK
+Estimated completion: 2026-05-20
+=========================
+
+2026-05-13T13:07:56.118703700 === REPAIR ORDER F4EDFDB9 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike loses power after approximately 5 km of riding.
+State: ACCEPTED
+Findings: Battery cells show degradation. BMS fault code detected. Drivetrain needs service.
+  - Replace battery management system (BMS) - Cost: 1500.0 SEK
+  - Clean and lubricate drivetrain - Cost: 350.0 SEK
+Total cost: 1850.0 SEK
+Estimated completion: 2026-05-20
+=========================
+

@@ -7,6 +7,8 @@ package se.kth.iv1350.repair.integration;
 public class RegistryCreator {
     private final CustomerRegistry customerRegistry;
     private final RepairOrderRegistry repairOrderRegistry;
+    private final RepairOrderLogger repairOrderLogger;
+    private final ErrorLogger errorLogger;
     private final Printer printer;
 
     /**
@@ -15,6 +17,8 @@ public class RegistryCreator {
     public RegistryCreator() {
         this.customerRegistry = new CustomerRegistry();
         this.repairOrderRegistry = new RepairOrderRegistry();
+        this.repairOrderLogger = new RepairOrderLogger("repairOrder.log");
+        this.errorLogger = new ErrorLogger("error.log");
         this.printer = new Printer();
     }
 
@@ -26,6 +30,16 @@ public class RegistryCreator {
     /** @return The repair order registry. */
     public RepairOrderRegistry getRepairOrderRegistry() {
         return repairOrderRegistry;
+    }
+
+    /** @return repairOrderLogger The object that logs repair orders */
+    public RepairOrderLogger getRepairOrderLogger() {
+        return repairOrderLogger;
+    }
+
+    /** @return errorLogger The object that logs errors  */
+    public ErrorLogger getErrorLogger() {
+        return errorLogger;
     }
 
     /** @return The printer. */

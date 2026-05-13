@@ -15,6 +15,7 @@ public class RepairOrder {
     private final LocalDate date;
     private DiagnosticReport diagnosticReport;
     private RepairOrderState state;
+    private final List<RepairOrderObserver> observers = new ArrayList<>();
 
     /**
      * Creates a newly created repair order.
@@ -32,6 +33,26 @@ public class RepairOrder {
     }
 
     /**
+     *  Adds an observer to the list of observers
+     * 
+     * @param observer The observer to add
+     */
+    public void addObserver(RepairOrderObserver observer) {
+        observers.add(observer);
+    }
+
+    /**
+     * Notifies all observers that the repair order has been updated
+     * 
+     */
+    public void notifyObservers() {
+        RepairOrderDTO dto = toDTO();
+        for (RepairOrderObserver observer : observers) {
+            observer.repairOrderUpdated(dto);
+        }
+    }
+
+    /**
      * Adds a diagnostic report and moves the order to READY_FOR_APPROVAL state.
      *
      * @param report The diagnostic report from the technician.
@@ -39,6 +60,7 @@ public class RepairOrder {
     public void addDiagnosticReport(DiagnosticReport report) {
         this.diagnosticReport = report;
         this.state = RepairOrderState.READY_FOR_APPROVAL;
+        notifyObservers();
     }
 
     /**
@@ -46,6 +68,7 @@ public class RepairOrder {
      */
     public void accept() {
         this.state = RepairOrderState.ACCEPTED;
+        notifyObservers();
     }
 
     /**
@@ -53,6 +76,7 @@ public class RepairOrder {
      */
     public void reject() {
         this.state = RepairOrderState.REJECTED;
+        notifyObservers();
     }
 
     /** @return The current state of this repair order. */

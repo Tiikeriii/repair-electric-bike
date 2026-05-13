@@ -1,11 +1,12 @@
 package se.kth.iv1350.repair.controller;
 
-import se.kth.iv1350.repair.integration.FileLogger;
 import se.kth.iv1350.repair.integration.CustomerNotFoundException;
 import se.kth.iv1350.repair.integration.CustomerRegistry;
 import se.kth.iv1350.repair.integration.DatabaseFailureException;
 import se.kth.iv1350.repair.integration.Printer;
 import se.kth.iv1350.repair.integration.RegistryCreator;
+import se.kth.iv1350.repair.integration.ErrorLogger;
+import se.kth.iv1350.repair.integration.RepairOrderLogger;
 import se.kth.iv1350.repair.integration.RepairOrderRegistry;
 import se.kth.iv1350.repair.model.Customer;
 import se.kth.iv1350.repair.model.CustomerDTO;
@@ -14,6 +15,7 @@ import se.kth.iv1350.repair.model.RepairOrder;
 import se.kth.iv1350.repair.model.RepairOrderDTO;
 import se.kth.iv1350.repair.model.RepairTask;
 import se.kth.iv1350.repair.model.RepairTaskDTO;
+import se.kth.iv1350.repair.view.RepairOrderView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +28,9 @@ import java.util.UUID;
 public class RepairController {
     private final CustomerRegistry customerRegistry;
     private final RepairOrderRegistry repairOrderRegistry;
+    private final RepairOrderLogger repairOrderLogger;
+    private final ErrorLogger errorLogger;
+    private final RepairOrderView repairOrderView;
     private final Printer printer;
     private RepairOrder currentRepairOrder;
 
@@ -34,9 +39,12 @@ public class RepairController {
      *
      * @param registryCreator Provides access to all registries and external systems.
      */
-    public RepairController(RegistryCreator registryCreator) {
+    public RepairController(RegistryCreator registryCreator, RepairOrderView repairOrderView) {
         this.customerRegistry = registryCreator.getCustomerRegistry();
         this.repairOrderRegistry = registryCreator.getRepairOrderRegistry();
+        this.repairOrderLogger = registryCreator.getRepairOrderLogger();
+        this.errorLogger = registryCreator.getErrorLogger();
+        this.repairOrderView = repairOrderView;
         this.printer = registryCreator.getPrinter();
     }
 
@@ -69,6 +77,9 @@ public class RepairController {
         );
         String orderId = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
         currentRepairOrder = new RepairOrder(orderId, customer, problemDescription);
+        currentRepairOrder.addObserver(repairOrderView);
+        currentRepairOrder.addObserver(repairOrderLogger);
+        currentRepairOrder.notifyObservers();
         repairOrderRegistry.storeRepairOrder(currentRepairOrder);
         return currentRepairOrder.toDTO();
     }
@@ -129,7 +140,13 @@ public class RepairController {
         printer.printRepairOrder(formattedRepairOrder);
     }
 
-    public void logError(Exception e) {
-        new FileLogger().log(e);
+    /**
+     * Logs an exception
+     * 
+     * @param message the message about the exception
+     * @param e the exception
+     */
+    public void logException(String message, Exception e) {
+        errorLogger.logException(message, e);
     }
 }

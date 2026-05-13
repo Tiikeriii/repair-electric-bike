@@ -2,6 +2,7 @@ package se.kth.iv1350.repair.startup;
 
 import se.kth.iv1350.repair.controller.RepairController;
 import se.kth.iv1350.repair.integration.RegistryCreator;
+import se.kth.iv1350.repair.view.RepairOrderView;
 import se.kth.iv1350.repair.view.View;
 
 /**
@@ -17,7 +18,8 @@ public class Main {
      */
     public static void main(String[] args) {
         RegistryCreator registryCreator = new RegistryCreator();
-        RepairController controller = new RepairController(registryCreator);
+        RepairOrderView repairOrderView = new RepairOrderView();
+        RepairController controller = new RepairController(registryCreator, repairOrderView);
         new View(controller);
     }
 }
