@@ -36,7 +36,7 @@ public class View {
     private void runBasicFlow() {
         System.out.println("=== Repair Electric Bike  Basic Flow Simulation ===\n");
 
-        // Steps 2-4: Receptionist enters customer's phone number
+        // Steps 2-4: Receptionist enters customer's phone number (entering 69 will cause the "database" to be unavailable)
         int phoneNumber = 123456789;
         System.out.println("[Receptionist] Customer phone number entered: " + phoneNumber);
 

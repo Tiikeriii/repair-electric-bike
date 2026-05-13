@@ -10,6 +10,7 @@ import se.kth.iv1350.repair.integration.RegistryCreator;
 import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.RepairOrderDTO;
 import se.kth.iv1350.repair.model.RepairTaskDTO;
+import se.kth.iv1350.repair.view.RepairOrderView;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,7 +26,8 @@ public class RepairControllerTest {
 
     @BeforeEach
     public void setUp() throws CustomerNotFoundException, DatabaseFailureException {
-        controller = new RepairController(new RegistryCreator());
+        RepairOrderView repairOrderView = new RepairOrderView();
+        controller = new RepairController(new RegistryCreator(), repairOrderView);
         customerInfo = controller.findCustomer(123456789);
     }
 

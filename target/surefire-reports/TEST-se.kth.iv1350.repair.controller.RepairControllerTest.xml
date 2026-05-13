@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.087" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.095" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\joelc\AppData\Local\Temp\surefire7682123514194172951\surefirebooter-20260512193522533_3.jar C:\Users\joelc\AppData\Local\Temp\surefire7682123514194172951 2026-05-12T19-35-22_415-jvmRun1 surefire-20260512193522533_1tmp surefire_0-20260512193522533_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\joelc\AppData\Local\Temp\surefire5858813846086236912\surefirebooter-20260513131507100_3.jar C:\Users\joelc\AppData\Local\Temp\surefire5858813846086236912 2026-05-13T13-15-06_936-jvmRun1 surefire-20260513131507100_1tmp surefire_0-20260513131507100_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\joelc\Documents\GitHub\repair-electric-bike\target\test-classes;C:\Users\joelc\Documents\GitHub\repair-electric-bike\target\classes;C:\Users\joelc\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\joelc\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\joelc\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\joelc\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\joelc\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\joelc\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\joelc\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\joelc\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\joelc\AppData\Local\Temp\surefire7682123514194172951\surefirebooter-20260512193522533_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\joelc\AppData\Local\Temp\surefire5858813846086236912\surefirebooter-20260513131507100_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.18+8"/>
@@ -51,7 +51,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\joelc\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\joelc\bin;C:\Users\joelc\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\joelc\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Google\Chrome\Application;C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\joelc\KTH\bin;C:\Users\joelc\KTH\MATLAB\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Users\joelc\AppData\Local\Microsoft\WindowsApps;C:\Users\joelc\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;C:\Users\joelc\Downloads\apache-maven-3.9.15-bin\apache-maven-3.9.15\bin;C:\Users\joelc\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\joelc\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\joelc\bin;C:\Users\joelc\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\joelc\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\joelc\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\joelc\KTH\bin;C:\Users\joelc\KTH\MATLAB\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Users\joelc\AppData\Local\Microsoft\WindowsApps;C:\Users\joelc\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;C:\Users\joelc\Downloads\apache-maven-3.9.15-bin\apache-maven-3.9.15\bin;C:\Users\joelc\AppData\Local\GitHubDesktop\binc;C:\Program Files\Git\Users\joelc\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="java.vm.version" value="17.0.18+8"/>
@@ -59,14 +59,132 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testFindKnownCustomerReturnsNonNull" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.016"/>
-  <testcase name="testCreateRepairOrderReturnsDTO" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.047"/>
-  <testcase name="testFindUnknownCustomerThrowsException" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.004"/>
-  <testcase name="testCreatedOrderHasStateNewlyCreated" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.001"/>
-  <testcase name="testRejectRepairOrderChangesStateToRejected" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.001"/>
-  <testcase name="testGetRepairOrderReturnsNullWhenQueueIsEmpty" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.001"/>
-  <testcase name="testGetRepairOrderReturnsCreatedOrder" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.001"/>
-  <testcase name="testAcceptRepairOrderChangesStateToAccepted" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.0"/>
-  <testcase name="testCreatedOrderContainsCorrectProblemDescription" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.0"/>
-  <testcase name="testAddDiagnosticReportChangesState" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.001"/>
+  <testcase name="testFindKnownCustomerReturnsNonNull" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.022"/>
+  <testcase name="testCreateRepairOrderReturnsDTO" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.041">
+    <system-out><![CDATA[=== REPAIR ORDER 3F7106D5 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+]]></system-out>
+  </testcase>
+  <testcase name="testFindUnknownCustomerThrowsException" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.011"/>
+  <testcase name="testCreatedOrderHasStateNewlyCreated" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.003">
+    <system-out><![CDATA[=== REPAIR ORDER EEB60066 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+]]></system-out>
+  </testcase>
+  <testcase name="testRejectRepairOrderChangesStateToRejected" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.0">
+    <system-out><![CDATA[=== REPAIR ORDER 1E5409C4 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+=== REPAIR ORDER 1E5409C4 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-20
+=========================
+=== REPAIR ORDER 1E5409C4 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: REJECTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-20
+=========================
+]]></system-out>
+  </testcase>
+  <testcase name="testGetRepairOrderReturnsNullWhenQueueIsEmpty" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.0"/>
+  <testcase name="testGetRepairOrderReturnsCreatedOrder" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.004">
+    <system-out><![CDATA[=== REPAIR ORDER 729DBFF7 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+]]></system-out>
+  </testcase>
+  <testcase name="testAcceptRepairOrderChangesStateToAccepted" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.002">
+    <system-out><![CDATA[=== REPAIR ORDER 06A54089 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+=== REPAIR ORDER 06A54089 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-20
+=========================
+=== REPAIR ORDER 06A54089 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: ACCEPTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-20
+=========================
+]]></system-out>
+  </testcase>
+  <testcase name="testCreatedOrderContainsCorrectProblemDescription" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.001">
+    <system-out><![CDATA[=== REPAIR ORDER 5CCF7926 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+]]></system-out>
+  </testcase>
+  <testcase name="testAddDiagnosticReportChangesState" classname="se.kth.iv1350.repair.controller.RepairControllerTest" time="0.001">
+    <system-out><![CDATA[=== REPAIR ORDER 654804D2 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+=== REPAIR ORDER 654804D2 ===
+Date: 2026-05-13
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-20
+=========================
+]]></system-out>
+  </testcase>
 </testsuite>
