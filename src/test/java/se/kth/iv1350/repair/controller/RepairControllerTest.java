@@ -1,5 +1,6 @@
 package se.kth.iv1350.repair.controller;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -7,6 +8,7 @@ import se.kth.iv1350.repair.integration.CustomerNotFoundException;
 import se.kth.iv1350.repair.integration.CustomerRegistry;
 import se.kth.iv1350.repair.integration.DatabaseFailureException;
 import se.kth.iv1350.repair.integration.RegistryCreator;
+import se.kth.iv1350.repair.integration.RepairOrderRegistry;
 import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.RepairOrderDTO;
 import se.kth.iv1350.repair.model.RepairTaskDTO;
@@ -31,6 +33,12 @@ public class RepairControllerTest {
         customerInfo = controller.findCustomer(123456789);
     }
 
+    @AfterEach
+    public void tearDown() {
+        CustomerRegistry.resetInstance();
+        RepairOrderRegistry.resetInstance();
+    }
+
     @Test
     public void testFindKnownCustomerReturnsNonNull() {
         assertNotNull(customerInfo,
@@ -39,7 +47,7 @@ public class RepairControllerTest {
 
     @Test
     public void testFindUnknownCustomerThrowsException() {
-        CustomerRegistry controller = new CustomerRegistry();
+        CustomerRegistry controller = CustomerRegistry.getInstance();
         assertThrows(CustomerNotFoundException.class, () -> {
             controller.findCustomer(999999999);
         }, "Should throw CustomerNotFoundException for unknown phone number");

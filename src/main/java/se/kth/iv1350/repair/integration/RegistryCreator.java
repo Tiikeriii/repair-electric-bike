@@ -15,8 +15,8 @@ public class RegistryCreator {
      * Creates a new instance and instantiates all registries and external system handlers.
      */
     public RegistryCreator() {
-        this.customerRegistry = new CustomerRegistry();
-        this.repairOrderRegistry = new RepairOrderRegistry();
+        this.customerRegistry =  CustomerRegistry.getInstance();
+        this.repairOrderRegistry = RepairOrderRegistry.getInstance();
         this.repairOrderLogger = new RepairOrderLogger("repairOrder.log");
         this.errorLogger = new ErrorLogger("error.log");
         this.printer = new Printer();

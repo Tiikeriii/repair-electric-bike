@@ -7,6 +7,8 @@ import se.kth.iv1350.repair.model.RepairOrder;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.AfterEach;
+
 /**
  * Unit tests for the RepairOrderRegistry class.
  */
@@ -17,10 +19,22 @@ public class RepairOrderRegistryTest {
 
     @BeforeEach
     public void setUp() {
-        registry = new RepairOrderRegistry();
+        registry = RepairOrderRegistry.getInstance();
         Customer customer = new Customer("Alice", 123, "a@b.com", "Trek", "FX3", "SN001");
         orderA = new RepairOrder("A", customer, "Problem A");
         orderB = new RepairOrder("B", customer, "Problem B");
+    }
+
+    @AfterEach
+    public void tearDown() {
+        RepairOrderRegistry.resetInstance();
+    }
+
+    @Test
+    public void testGetInstanceReturnsSameInstance() {
+        RepairOrderRegistry first = RepairOrderRegistry.getInstance();
+        RepairOrderRegistry second = RepairOrderRegistry.getInstance();
+        assertSame(first, second,"getInstance() should always return the same RepairOrderRegistry instance");
     }
 
     @Test

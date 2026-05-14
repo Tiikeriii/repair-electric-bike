@@ -14,9 +14,15 @@ public class CustomerRegistryTest {
 
     @BeforeEach
     public void setUp() {
-        registry = new CustomerRegistry();
+        registry = CustomerRegistry.getInstance();
     }
 
+    @Test
+    public void testGetInstanceReturnsSameInstance() {
+        CustomerRegistry first = CustomerRegistry.getInstance();
+        CustomerRegistry second = CustomerRegistry.getInstance();
+        assertSame(first, second,"getInstance() should always return the same CustomerRegistry instance");
+}
     @Test
     public void testFindKnownCustomerReturnsNonNull() throws CustomerNotFoundException, DatabaseFailureException {
         CustomerDTO result = registry.findCustomer(123456789);
@@ -25,7 +31,7 @@ public class CustomerRegistryTest {
 
     @Test
     public void testFindUnknownCustomerThrowsException() {
-        CustomerRegistry registry = new CustomerRegistry();
+        CustomerRegistry registry = CustomerRegistry.getInstance();
         assertThrows(CustomerNotFoundException.class, () -> {
             registry.findCustomer(999999999);
         }, "Should throw CustomerNotFoundException for unknown phone number");
@@ -33,7 +39,7 @@ public class CustomerRegistryTest {
 
     @Test
     public void testDatabaseFailureThrowsException() {
-    CustomerRegistry registry = new CustomerRegistry();
+    CustomerRegistry registry = CustomerRegistry.getInstance();
     assertThrows(DatabaseFailureException.class, () -> {
         registry.findCustomer(69);
     }, "Should throw DatabaseFailureException when database is unavailable");
@@ -41,7 +47,7 @@ public class CustomerRegistryTest {
 
 @Test
     public void testCustomerNotFoundExceptionContainsPhoneNumber() {
-    CustomerRegistry registry = new CustomerRegistry();
+    CustomerRegistry registry = CustomerRegistry.getInstance();
     CustomerNotFoundException exception = assertThrows(
             CustomerNotFoundException.class, () -> {
                 registry.findCustomer(999999999);
