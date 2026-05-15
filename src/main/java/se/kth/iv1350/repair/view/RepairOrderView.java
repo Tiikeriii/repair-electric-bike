@@ -67,5 +67,4 @@ public class RepairOrderView implements RepairOrderObserver {
         sb.append("Total cost: ").append(order.getTotalCost()).append(" SEK");
         return sb.toString();
     }
-
 }

@@ -11,9 +11,7 @@ import se.kth.iv1350.repair.integration.RegistryCreator;
 import se.kth.iv1350.repair.integration.RepairOrderRegistry;
 import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.RepairOrderDTO;
-import se.kth.iv1350.repair.model.RepairOrderObserver;
 import se.kth.iv1350.repair.model.RepairTaskDTO;
-import se.kth.iv1350.repair.view.RepairOrderView;
 
 import java.util.Arrays;
 import java.util.List;
@@ -37,6 +35,7 @@ public class RepairControllerTest {
     public void tearDown() {
         CustomerRegistry.resetInstance();
         RepairOrderRegistry.resetInstance();
+        
     }
 
     @Test

@@ -1,6 +1,7 @@
 C:\Users\joelc\Documents\GitHub\repair-electric-bike\src\test\java\se\kth\iv1350\repair\controller\RepairControllerTest.java
 C:\Users\joelc\Documents\GitHub\repair-electric-bike\src\test\java\se\kth\iv1350\repair\integration\CustomerRegistryTest.java
 C:\Users\joelc\Documents\GitHub\repair-electric-bike\src\test\java\se\kth\iv1350\repair\integration\LoggerTest.java
+C:\Users\joelc\Documents\GitHub\repair-electric-bike\src\test\java\se\kth\iv1350\repair\integration\RepairOrderObserverTest.java
 C:\Users\joelc\Documents\GitHub\repair-electric-bike\src\test\java\se\kth\iv1350\repair\integration\RepairOrderRegistryTest.java
 C:\Users\joelc\Documents\GitHub\repair-electric-bike\src\test\java\se\kth\iv1350\repair\model\DiagnosticReportTest.java
 C:\Users\joelc\Documents\GitHub\repair-electric-bike\src\test\java\se\kth\iv1350\repair\model\RepairOrderTest.java
