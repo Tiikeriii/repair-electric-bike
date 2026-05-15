@@ -38,7 +38,9 @@ public class RepairOrder {
      * @param observer The observer to add
      */
     public void addObserver(RepairOrderObserver observer) {
-        observers.add(observer);
+        if (observer != null) {
+            observers.add(observer);
+        }
     }
 
     /**
