@@ -1,63 +1,29 @@
-2026-05-13T13:07:56.108596600 === REPAIR ORDER F4EDFDB9 ===
-Date: 2026-05-13
-Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
-Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
-Problem: Bike loses power after approximately 5 km of riding.
-State: NEWLY_CREATED
-=========================
-
-2026-05-13T13:07:56.115879100 === REPAIR ORDER F4EDFDB9 ===
-Date: 2026-05-13
-Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
-Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
-Problem: Bike loses power after approximately 5 km of riding.
-State: READY_FOR_APPROVAL
-Findings: Battery cells show degradation. BMS fault code detected. Drivetrain needs service.
-  - Replace battery management system (BMS) - Cost: 1500.0 SEK
-  - Clean and lubricate drivetrain - Cost: 350.0 SEK
-Total cost: 1850.0 SEK
-Estimated completion: 2026-05-20
-=========================
-
-2026-05-13T13:07:56.118703700 === REPAIR ORDER F4EDFDB9 ===
-Date: 2026-05-13
-Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
-Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
-Problem: Bike loses power after approximately 5 km of riding.
-State: ACCEPTED
-Findings: Battery cells show degradation. BMS fault code detected. Drivetrain needs service.
-  - Replace battery management system (BMS) - Cost: 1500.0 SEK
-  - Clean and lubricate drivetrain - Cost: 350.0 SEK
-Total cost: 1850.0 SEK
-Estimated completion: 2026-05-20
-=========================
-
-2026-05-13T13:15:07.725775200 === REPAIR ORDER 3F7106D5 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.941750200 === REPAIR ORDER 50255A78 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-13T13:15:07.736018900 === REPAIR ORDER EEB60066 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.949966500 === REPAIR ORDER B46D5EB3 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-13T13:15:07.739647300 === REPAIR ORDER 1E5409C4 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.952099100 === REPAIR ORDER 8B7B4EC4 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-13T13:15:07.739647300 === REPAIR ORDER 1E5409C4 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.956096700 === REPAIR ORDER 8B7B4EC4 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -65,11 +31,11 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-20
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-13T13:15:07.739647300 === REPAIR ORDER 1E5409C4 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.956096700 === REPAIR ORDER 8B7B4EC4 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -77,27 +43,27 @@ State: REJECTED
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-20
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-13T13:15:07.743955800 === REPAIR ORDER 729DBFF7 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.959096500 === REPAIR ORDER C0B1B5EE ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-13T13:15:07.744960400 === REPAIR ORDER 06A54089 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.959599 === REPAIR ORDER 1A7433AC ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-13T13:15:07.744960400 === REPAIR ORDER 06A54089 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.960602600 === REPAIR ORDER 1A7433AC ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -105,11 +71,11 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-20
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-13T13:15:07.744960400 === REPAIR ORDER 06A54089 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.960602600 === REPAIR ORDER 1A7433AC ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -117,27 +83,27 @@ State: ACCEPTED
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-20
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-13T13:15:07.746665100 === REPAIR ORDER 5CCF7926 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.961607100 === REPAIR ORDER A0466103 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-13T13:15:07.747558600 === REPAIR ORDER 654804D2 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.962606700 === REPAIR ORDER BE564545 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-13T13:15:07.747558600 === REPAIR ORDER 654804D2 ===
-Date: 2026-05-13
+2026-05-21T18:56:39.962606700 === REPAIR ORDER BE564545 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -145,35 +111,35 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-20
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:23:23.570320300 === REPAIR ORDER CE5E4FA5 ===
-Date: 2026-05-14
+2026-05-21T18:57:54.934808500 === REPAIR ORDER 354C5C7C ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:23:23.580423600 === REPAIR ORDER 307D6C9A ===
-Date: 2026-05-14
+2026-05-21T18:57:54.941805900 === REPAIR ORDER AE57B7CA ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:23:23.581483100 === REPAIR ORDER E315423B ===
-Date: 2026-05-14
+2026-05-21T18:57:54.942310200 === REPAIR ORDER 6E4D29B6 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:23:23.582481700 === REPAIR ORDER CE5E4FA5 ===
-Date: 2026-05-14
+2026-05-21T18:57:54.943312700 === REPAIR ORDER 354C5C7C ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
@@ -181,11 +147,11 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:23:23.583482200 === REPAIR ORDER CE5E4FA5 ===
-Date: 2026-05-14
+2026-05-21T18:57:54.943312700 === REPAIR ORDER 354C5C7C ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
@@ -193,27 +159,27 @@ State: REJECTED
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:23:23.590425500 === REPAIR ORDER 78570539 ===
-Date: 2026-05-14
+2026-05-21T18:57:54.951816300 === REPAIR ORDER 974FD4F6 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:23:23.592426 === REPAIR ORDER 14CA552B ===
-Date: 2026-05-14
+2026-05-21T18:57:54.952821400 === REPAIR ORDER 036F1D43 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:23:23.593426 === REPAIR ORDER 78570539 ===
-Date: 2026-05-14
+2026-05-21T18:57:54.953821800 === REPAIR ORDER 974FD4F6 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -221,11 +187,11 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:23:23.593426 === REPAIR ORDER 78570539 ===
-Date: 2026-05-14
+2026-05-21T18:57:54.953821800 === REPAIR ORDER 974FD4F6 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -233,27 +199,27 @@ State: ACCEPTED
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:23:23.594426100 === REPAIR ORDER 5C839E7E ===
-Date: 2026-05-14
+2026-05-21T18:57:54.954821900 === REPAIR ORDER 2506A9D6 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:23:23.595426700 === REPAIR ORDER FEDA0C56 ===
-Date: 2026-05-14
+2026-05-21T18:57:54.955822900 === REPAIR ORDER 350B8CDB ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:23:23.595426700 === REPAIR ORDER 14CA552B ===
-Date: 2026-05-14
+2026-05-21T18:57:54.955822900 === REPAIR ORDER 036F1D43 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -261,35 +227,35 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:28:17.881116400 === REPAIR ORDER 9CFF75F0 ===
-Date: 2026-05-14
+2026-05-21T19:07:25.381578100 === REPAIR ORDER 6A8BC9E3 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:28:17.887906800 === REPAIR ORDER 02810E3F ===
-Date: 2026-05-14
+2026-05-21T19:07:25.389582500 === REPAIR ORDER EEA21D13 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:28:17.889741 === REPAIR ORDER AEC51FBF ===
-Date: 2026-05-14
+2026-05-21T19:07:25.391608 === REPAIR ORDER 80CB996A ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:28:17.890766600 === REPAIR ORDER 9CFF75F0 ===
-Date: 2026-05-14
+2026-05-21T19:07:25.392639700 === REPAIR ORDER 6A8BC9E3 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
@@ -297,11 +263,11 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:28:17.890766600 === REPAIR ORDER 9CFF75F0 ===
-Date: 2026-05-14
+2026-05-21T19:07:25.392639700 === REPAIR ORDER 6A8BC9E3 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
@@ -309,27 +275,27 @@ State: REJECTED
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:28:17.898444900 === REPAIR ORDER 7984D499 ===
-Date: 2026-05-14
+2026-05-21T19:07:25.400637400 === REPAIR ORDER B7A605FE ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:28:17.901445800 === REPAIR ORDER 41EE6E93 ===
-Date: 2026-05-14
+2026-05-21T19:07:25.401637300 === REPAIR ORDER 12D7A3DA ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:28:17.901445800 === REPAIR ORDER 7984D499 ===
-Date: 2026-05-14
+2026-05-21T19:07:25.402669200 === REPAIR ORDER B7A605FE ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -337,11 +303,11 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:28:17.902446200 === REPAIR ORDER 7984D499 ===
-Date: 2026-05-14
+2026-05-21T19:07:25.402669200 === REPAIR ORDER B7A605FE ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -349,27 +315,27 @@ State: ACCEPTED
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:28:17.903445900 === REPAIR ORDER 7DCC7365 ===
-Date: 2026-05-14
+2026-05-21T19:07:25.403667 === REPAIR ORDER 185868EB ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:28:17.904446800 === REPAIR ORDER 689FFE1D ===
-Date: 2026-05-14
+2026-05-21T19:07:25.404668700 === REPAIR ORDER D9622909 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:28:17.905446100 === REPAIR ORDER 41EE6E93 ===
-Date: 2026-05-14
+2026-05-21T19:07:25.404668700 === REPAIR ORDER 12D7A3DA ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -377,35 +343,75 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:34:49.249212700 === REPAIR ORDER 7485171D ===
-Date: 2026-05-14
+2026-05-21T19:09:11.500736100 === REPAIR ORDER 5B27445A ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:34:49.256191500 === REPAIR ORDER 36F556D5 ===
-Date: 2026-05-14
+2026-05-21T19:09:11.508804100 === REPAIR ORDER 736C3124 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:34:49.257192300 === REPAIR ORDER B9DF489D ===
-Date: 2026-05-14
+2026-05-21T19:09:11.509803200 === REPAIR ORDER D4A949DE ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:34:49.258467200 === REPAIR ORDER B9DF489D ===
-Date: 2026-05-14
+2026-05-21T19:09:11.510802500 === REPAIR ORDER 5B27445A ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:09:11.510802500 === REPAIR ORDER 5B27445A ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: REJECTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:09:11.517136100 === REPAIR ORDER 87BE8939 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:11.519644200 === REPAIR ORDER ECD3C6CB ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:11.519644200 === REPAIR ORDER 87BE8939 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -413,11 +419,435 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:34:49.259467900 === REPAIR ORDER B9DF489D ===
-Date: 2026-05-14
+2026-05-21T19:09:11.520644 === REPAIR ORDER 87BE8939 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: ACCEPTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:09:11.520644 === REPAIR ORDER 031E6D60 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:11.521645900 === REPAIR ORDER 76B371D1 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:11.522642800 === REPAIR ORDER ECD3C6CB ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:09:35.745211100 === REPAIR ORDER 0036362E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:35.752716800 === REPAIR ORDER 43634161 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:35.754220400 === REPAIR ORDER A9FBD893 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:35.755224700 === REPAIR ORDER 0036362E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:09:35.756225500 === REPAIR ORDER 0036362E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: REJECTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:09:35.762733200 === REPAIR ORDER 8982F79B ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:35.764236300 === REPAIR ORDER 32580CA2 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:35.764236300 === REPAIR ORDER 8982F79B ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:09:35.765240900 === REPAIR ORDER 8982F79B ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: ACCEPTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:09:35.765240900 === REPAIR ORDER 851BF69E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:35.766245200 === REPAIR ORDER 79444B4D ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:09:35.766245200 === REPAIR ORDER 32580CA2 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:10:39.212773100 === REPAIR ORDER 8E859D5B ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:10:39.219788700 === REPAIR ORDER D35ABB34 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:10:39.221785600 === REPAIR ORDER 08746F10 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:10:39.222786600 === REPAIR ORDER 8E859D5B ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:10:39.222786600 === REPAIR ORDER 8E859D5B ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: REJECTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:10:39.229803800 === REPAIR ORDER E8BA60A8 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:10:39.231804700 === REPAIR ORDER 5EA0AB89 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:10:39.231804700 === REPAIR ORDER E8BA60A8 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:10:39.231804700 === REPAIR ORDER E8BA60A8 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: ACCEPTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:10:39.232804400 === REPAIR ORDER E1E7B461 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:10:39.233804 === REPAIR ORDER BFF0C97A ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:10:39.233804 === REPAIR ORDER 5EA0AB89 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:12:18.161679600 === REPAIR ORDER 8EAC183E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:12:18.169735100 === REPAIR ORDER B5A3B189 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:12:18.170732400 === REPAIR ORDER CFC5D4D6 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:12:18.171733600 === REPAIR ORDER 8EAC183E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:12:18.172733300 === REPAIR ORDER 8EAC183E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: REJECTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:12:18.178905500 === REPAIR ORDER FEB00D0E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:12:18.180903100 === REPAIR ORDER D4096AB5 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:12:18.180903100 === REPAIR ORDER FEB00D0E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:12:18.180903100 === REPAIR ORDER FEB00D0E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: ACCEPTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:12:18.181904100 === REPAIR ORDER E07864D7 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:12:18.182903400 === REPAIR ORDER 677BE51E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:12:18.182903400 === REPAIR ORDER D4096AB5 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:13:50.751686400 === REPAIR ORDER 7CA47F58 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:13:50.759197600 === REPAIR ORDER 2FF12359 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:13:50.761196600 === REPAIR ORDER 7B952D17 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:13:50.761196600 === REPAIR ORDER 7B952D17 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:13:50.762198400 === REPAIR ORDER 7B952D17 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -425,27 +855,27 @@ State: REJECTED
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:34:49.261587800 === REPAIR ORDER C8F4EFF7 ===
-Date: 2026-05-14
+2026-05-21T19:13:50.764196700 === REPAIR ORDER E55DC1E4 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:34:49.262593500 === REPAIR ORDER 232F25C8 ===
-Date: 2026-05-14
+2026-05-21T19:13:50.765196700 === REPAIR ORDER 8F508A03 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:34:49.262593500 === REPAIR ORDER 232F25C8 ===
-Date: 2026-05-14
+2026-05-21T19:13:50.765196700 === REPAIR ORDER 8F508A03 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -453,11 +883,11 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:34:49.263588500 === REPAIR ORDER 232F25C8 ===
-Date: 2026-05-14
+2026-05-21T19:13:50.766195900 === REPAIR ORDER 8F508A03 ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -465,27 +895,27 @@ State: ACCEPTED
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
 =========================
 
-2026-05-14T12:34:49.263588500 === REPAIR ORDER B680867A ===
-Date: 2026-05-14
+2026-05-21T19:13:50.767198400 === REPAIR ORDER 3DBC53CB ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Bike won't start
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:34:49.264587300 === REPAIR ORDER 0A95ECB6 ===
-Date: 2026-05-14
+2026-05-21T19:13:50.768199500 === REPAIR ORDER FAA3351E ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
 State: NEWLY_CREATED
 =========================
 
-2026-05-14T12:34:49.265590800 === REPAIR ORDER 0A95ECB6 ===
-Date: 2026-05-14
+2026-05-21T19:13:50.768199500 === REPAIR ORDER FAA3351E ===
+Date: 2026-05-21
 Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
 Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
 Problem: Problem
@@ -493,6 +923,414 @@ State: READY_FOR_APPROVAL
 Findings: Motor fault
   - Fix motor - Cost: 500.0 SEK
 Total cost: 500.0 SEK
-Estimated completion: 2026-05-21
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:14:20.039125300 === REPAIR ORDER 4AF5BCA3 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:14:20.046130 === REPAIR ORDER E503560F ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:14:20.047130400 === REPAIR ORDER 454899B4 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:14:20.049140400 === REPAIR ORDER 454899B4 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:14:20.049140400 === REPAIR ORDER 454899B4 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: REJECTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:14:20.051145500 === REPAIR ORDER B287F323 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:14:20.052144600 === REPAIR ORDER 37788F9C ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:14:20.052144600 === REPAIR ORDER 37788F9C ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:14:20.053144800 === REPAIR ORDER 37788F9C ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: ACCEPTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:14:20.053144800 === REPAIR ORDER F30A2BBB ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:14:20.054145700 === REPAIR ORDER 19CCD111 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:14:20.054145700 === REPAIR ORDER 19CCD111 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:29:47.536733100 === REPAIR ORDER 461311FE ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:29:47.539732500 === REPAIR ORDER 461311FE ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: REJECTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:29:47.542732500 === REPAIR ORDER 6DD817BD ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:29:47.542732500 === REPAIR ORDER 6DD817BD ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: ACCEPTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:29:47.543732700 === REPAIR ORDER 58F72B25 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:56:34.901730400 === REPAIR ORDER 7282943E ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:56:34.909321900 === REPAIR ORDER A63F8EBB ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:56:34.911321500 === REPAIR ORDER 2946B8A5 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:56:34.912324 === REPAIR ORDER 2946B8A5 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:56:34.913323300 === REPAIR ORDER 2946B8A5 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: REJECTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:56:34.914824600 === REPAIR ORDER BF614329 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:56:34.915827600 === REPAIR ORDER E0E99A3C ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:56:34.915827600 === REPAIR ORDER E0E99A3C ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:56:34.916830900 === REPAIR ORDER E0E99A3C ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: ACCEPTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T19:56:34.916830900 === REPAIR ORDER 009F22AA ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:56:34.917831600 === REPAIR ORDER A7DB1127 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T19:56:34.918831900 === REPAIR ORDER A7DB1127 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T20:02:19.008526800 === REPAIR ORDER B739BA22 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T20:02:19.016545200 === REPAIR ORDER 318DFBC1 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T20:02:19.018544400 === REPAIR ORDER AA16ED88 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T20:02:19.018544400 === REPAIR ORDER AA16ED88 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T20:02:19.020050100 === REPAIR ORDER AA16ED88 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: REJECTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T20:02:19.022054800 === REPAIR ORDER 7287BDB8 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T20:02:19.023054300 === REPAIR ORDER 2A00007B ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T20:02:19.023054300 === REPAIR ORDER 2A00007B ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T20:02:19.023054300 === REPAIR ORDER 2A00007B ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: ACCEPTED
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
+=========================
+
+2026-05-21T20:02:19.024557200 === REPAIR ORDER 207E2466 ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Bike won't start
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T20:02:19.025561900 === REPAIR ORDER DC8FCE1C ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: NEWLY_CREATED
+=========================
+
+2026-05-21T20:02:19.025561900 === REPAIR ORDER DC8FCE1C ===
+Date: 2026-05-21
+Customer: Alice Svensson | Phone: 123456789 | Email: alice@example.com
+Bike: Trek Powerfly 5 | Serial: SN-2024-XR7
+Problem: Problem
+State: READY_FOR_APPROVAL
+Findings: Motor fault
+  - Fix motor - Cost: 500.0 SEK
+Total cost: 500.0 SEK
+Estimated completion: 2026-05-28
 =========================
 

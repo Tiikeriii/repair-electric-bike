@@ -23,6 +23,7 @@ public class RepairOrder {
      * @param orderId            A unique identifier for this order.
      * @param customer           The customer and bike information.
      * @param problemDescription The customer's description of the problem.
+     * @param observersToAdd A list of all observers
      */
     public RepairOrder(String orderId, Customer customer, String problemDescription) {
         this.orderId = orderId;
@@ -30,6 +31,10 @@ public class RepairOrder {
         this.problemDescription = problemDescription;
         this.date = LocalDate.now();
         this.state = RepairOrderState.NEWLY_CREATED;
+    }
+
+    public void markCreated() {
+        notifyObservers();
     }
 
     /**
@@ -47,7 +52,7 @@ public class RepairOrder {
      * Notifies all observers that the repair order has been updated
      * 
      */
-    public void notifyObservers() {
+    private void notifyObservers() {
         RepairOrderDTO dto = toDTO();
         for (RepairOrderObserver observer : observers) {
             observer.repairOrderUpdated(dto);

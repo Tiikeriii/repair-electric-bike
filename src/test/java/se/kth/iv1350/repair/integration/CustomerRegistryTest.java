@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import se.kth.iv1350.repair.model.CustomerDTO;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.AfterEach;
 
 /**
  * Unit tests for the CustomerRegistry class.
@@ -17,6 +18,11 @@ public class CustomerRegistryTest {
         registry = CustomerRegistry.getInstance();
     }
 
+    @AfterEach
+    public void tearDown() {
+        CustomerRegistry.clearForTesting();
+    }
+    
     @Test
     public void testGetInstanceReturnsSameInstance() {
         CustomerRegistry first = CustomerRegistry.getInstance();

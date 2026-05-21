@@ -33,9 +33,8 @@ public class RepairControllerTest {
 
     @AfterEach
     public void tearDown() {
-        CustomerRegistry.resetInstance();
-        RepairOrderRegistry.resetInstance();
-        
+        CustomerRegistry.clearForTesting();
+        RepairOrderRegistry.clearForTesting();
     }
 
     @Test

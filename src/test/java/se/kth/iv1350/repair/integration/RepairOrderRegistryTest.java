@@ -27,7 +27,7 @@ public class RepairOrderRegistryTest {
 
     @AfterEach
     public void tearDown() {
-        RepairOrderRegistry.resetInstance();
+        RepairOrderRegistry.clearForTesting();
     }
 
     @Test

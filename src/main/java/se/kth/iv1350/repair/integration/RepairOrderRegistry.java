@@ -12,7 +12,7 @@ import java.util.List;
  * Orders are queued in FIFO order for technicians to process.
  */
 public class RepairOrderRegistry {
-    private static RepairOrderRegistry instance;
+    private static final RepairOrderRegistry instance = new RepairOrderRegistry();
     private final Deque<RepairOrder> queue = new ArrayDeque<>();
     private final List<RepairOrder> allOrders = new ArrayList<>();
 
@@ -29,18 +29,17 @@ public class RepairOrderRegistry {
      * @return The single RepairOrderRegistry instance
      */
     public static RepairOrderRegistry getInstance() {
-        if (instance == null) {
-            instance = new RepairOrderRegistry();
-        }
         return instance;
     }
 
     /**
-     * Resets the singleton instance. Only used for testing purposes.
+     * Clears both lists, only used for testing
      */
-    public static void resetInstance() {
-        instance = null;
+    public static void clearForTesting() {
+        instance.queue.clear();
+        instance.allOrders.clear();
     }
+
     /**
      * Stores a new repair order in the registry and adds it to the processing queue.
      *

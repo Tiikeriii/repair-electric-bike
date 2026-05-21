@@ -13,6 +13,7 @@ import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.DiagnosticReport;
 import se.kth.iv1350.repair.model.RepairOrder;
 import se.kth.iv1350.repair.model.RepairOrderDTO;
+import se.kth.iv1350.repair.model.RepairOrderObserver;
 import se.kth.iv1350.repair.model.RepairTask;
 import se.kth.iv1350.repair.model.RepairTaskDTO;
 import se.kth.iv1350.repair.view.RepairOrderView;
@@ -53,6 +54,8 @@ public class RepairController {
      *
      * @param phoneNumber The customer's phone number.
      * @return A CustomerDTO if found, or null if the phone number is unknown.
+     * @throws CustomerNotFoundException when the specified phone number is not found
+     * @throws DatabaseFailureException when the phonenumber (69) is searched for
      */
     public CustomerDTO findCustomer(int phoneNumber) throws CustomerNotFoundException, DatabaseFailureException {
         return customerRegistry.findCustomer(phoneNumber);
@@ -77,10 +80,10 @@ public class RepairController {
         );
         String orderId = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
         currentRepairOrder = new RepairOrder(orderId, customer, problemDescription);
+        repairOrderRegistry.storeRepairOrder(currentRepairOrder);
         currentRepairOrder.addObserver(repairOrderView);
         currentRepairOrder.addObserver(repairOrderLogger);
-        currentRepairOrder.notifyObservers();
-        repairOrderRegistry.storeRepairOrder(currentRepairOrder);
+        currentRepairOrder.markCreated();
         return currentRepairOrder.toDTO();
     }
 
@@ -136,6 +139,11 @@ public class RepairController {
         return currentRepairOrder.toDTO();
     }
 
+    /**
+     * Calls the printer to print the repair order
+     * 
+     * @param formattedRepairOrder the formatted repair order
+     */
     public void printRepairOrder(String formattedRepairOrder) {
         printer.printRepairOrder(formattedRepairOrder);
     }
