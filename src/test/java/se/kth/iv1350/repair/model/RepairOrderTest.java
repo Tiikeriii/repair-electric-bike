@@ -3,6 +3,7 @@ package se.kth.iv1350.repair.model;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,11 +15,16 @@ import static org.junit.jupiter.api.Assertions.*;
 public class RepairOrderTest {
     private RepairOrder repairOrder;
     private Customer customer;
+    private TestObserver testObserver;
+    private List<RepairOrderObserver> observers;
 
     @BeforeEach
     public void setUp() {
+        testObserver = new TestObserver();
+        observers = new ArrayList<>();
+        observers.add(testObserver);
         customer = new Customer("Alice", 123, "a@b.com", "Trek", "FX3", "SN001");
-        repairOrder = new RepairOrder("ORD-001", customer, "Bike won't start");
+        repairOrder = new RepairOrder("ORD-001", customer, "Bike won't start", observers);
     }
 
     @Test
@@ -96,5 +102,26 @@ public class RepairOrderTest {
         RepairOrderDTO dto = repairOrder.toDTO();
         assertEquals("NEWLY_CREATED", dto.getState(),
                 "DTO state should match the repair order state");
+    }
+
+        public class TestObserver implements RepairOrderObserver {
+        private RepairOrderDTO lastUpdate;
+        private int updateCount = 0;
+
+        @Override
+        public void repairOrderUpdated(RepairOrderDTO repairOrder) {
+            this.lastUpdate = repairOrder;
+            this.updateCount++;
+        }
+
+        /** @return The last RepairOrderDTO received. */
+        public RepairOrderDTO getLastUpdate() {
+            return lastUpdate;
+        }
+
+        /** @return The number of times this observer was notified. */
+        public int getUpdateCount() {
+            return updateCount;
+        }
     }
 }

@@ -13,6 +13,7 @@ import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.DiagnosticReport;
 import se.kth.iv1350.repair.model.RepairOrder;
 import se.kth.iv1350.repair.model.RepairOrderDTO;
+import se.kth.iv1350.repair.model.RepairOrderObserver;
 import se.kth.iv1350.repair.model.RepairTask;
 import se.kth.iv1350.repair.model.RepairTaskDTO;
 import se.kth.iv1350.repair.view.RepairOrderView;
@@ -78,11 +79,11 @@ public class RepairController {
                 customerDTO.getBikeSerialNumber()
         );
         String orderId = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
-        currentRepairOrder = new RepairOrder(orderId, customer, problemDescription);
+        List<RepairOrderObserver> observers = new ArrayList<>();
+        observers.add(repairOrderView);
+        observers.add(repairOrderLogger);
+        currentRepairOrder = new RepairOrder(orderId, customer, problemDescription, observers);
         repairOrderRegistry.storeRepairOrder(currentRepairOrder);
-        currentRepairOrder.addObserver(repairOrderView);
-        currentRepairOrder.addObserver(repairOrderLogger);
-        currentRepairOrder.markCreated();
         return currentRepairOrder.toDTO();
     }
 

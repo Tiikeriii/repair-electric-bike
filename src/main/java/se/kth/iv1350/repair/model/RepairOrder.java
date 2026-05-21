@@ -25,16 +25,15 @@ public class RepairOrder {
      * @param problemDescription The customer's description of the problem.
      * @param observersToAdd A list of all observers
      */
-    public RepairOrder(String orderId, Customer customer, String problemDescription) {
+    public RepairOrder(String orderId, Customer customer, String problemDescription,
+                    List<RepairOrderObserver> observers) {
         this.orderId = orderId;
         this.customer = customer;
         this.problemDescription = problemDescription;
         this.date = LocalDate.now();
         this.state = RepairOrderState.NEWLY_CREATED;
-    }
-
-    public void markCreated() {
-        notifyObservers();
+        this.observers.addAll(observers); 
+        notifyObservers(); 
     }
 
     /**
@@ -55,7 +54,9 @@ public class RepairOrder {
     private void notifyObservers() {
         RepairOrderDTO dto = toDTO();
         for (RepairOrderObserver observer : observers) {
-            observer.repairOrderUpdated(dto);
+            if (observer != null) {
+                observer.repairOrderUpdated(dto);
+            }
         }
     }
 

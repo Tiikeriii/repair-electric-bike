@@ -4,8 +4,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import se.kth.iv1350.repair.model.Customer;
 import se.kth.iv1350.repair.model.RepairOrder;
+import se.kth.iv1350.repair.model.RepairOrderDTO;
+import se.kth.iv1350.repair.model.RepairOrderObserver;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.jupiter.api.AfterEach;
 
@@ -16,13 +21,17 @@ public class RepairOrderRegistryTest {
     private RepairOrderRegistry registry;
     private RepairOrder orderA;
     private RepairOrder orderB;
+    private TestObserver testObserver;
+    private List<RepairOrderObserver> observers;
 
     @BeforeEach
     public void setUp() {
+        observers = new ArrayList<>();
+        observers.add(testObserver);
         registry = RepairOrderRegistry.getInstance();
         Customer customer = new Customer("Alice", 123, "a@b.com", "Trek", "FX3", "SN001");
-        orderA = new RepairOrder("A", customer, "Problem A");
-        orderB = new RepairOrder("B", customer, "Problem B");
+        orderA = new RepairOrder("A", customer, "Problem A", observers);
+        orderB = new RepairOrder("B", customer, "Problem B", observers);
     }
 
     @AfterEach
@@ -73,9 +82,30 @@ public class RepairOrderRegistryTest {
     public void testGetAllOrdersIsUnmodifiable() {
         registry.storeRepairOrder(orderA);
         Customer c = new Customer("Bob", 999, "b@b.com", "Giant", "E+", "SN999");
-        RepairOrder orderC = new RepairOrder("C", c, "Problem C");
+        RepairOrder orderC = new RepairOrder("C", c, "Problem C", observers);
         assertThrows(UnsupportedOperationException.class,
                 () -> registry.getAllOrders().add(orderC),
                 "The all-orders list should be unmodifiable");
+    }
+
+    public class TestObserver implements RepairOrderObserver {
+        private RepairOrderDTO lastUpdate;
+        private int updateCount = 0;
+
+        @Override
+        public void repairOrderUpdated(RepairOrderDTO repairOrder) {
+            this.lastUpdate = repairOrder;
+            this.updateCount++;
+        }
+
+        /** @return The last RepairOrderDTO received. */
+        public RepairOrderDTO getLastUpdate() {
+            return lastUpdate;
+        }
+
+        /** @return The number of times this observer was notified. */
+        public int getUpdateCount() {
+            return updateCount;
+        }
     }
 }

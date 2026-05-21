@@ -11,6 +11,7 @@ import se.kth.iv1350.repair.integration.RegistryCreator;
 import se.kth.iv1350.repair.integration.RepairOrderRegistry;
 import se.kth.iv1350.repair.model.CustomerDTO;
 import se.kth.iv1350.repair.model.RepairOrderDTO;
+import se.kth.iv1350.repair.model.RepairOrderObserver;
 import se.kth.iv1350.repair.model.RepairTaskDTO;
 
 import java.util.Arrays;
@@ -116,5 +117,26 @@ public class RepairControllerTest {
         RepairOrderDTO order = controller.createRepairOrder(customerInfo, problem);
         assertEquals(problem, order.getProblemDescription(),
                 "The repair order should contain the correct problem description");
+    }
+
+    public class TestObserver implements RepairOrderObserver {
+        private RepairOrderDTO lastUpdate;
+        private int updateCount = 0;
+
+        @Override
+        public void repairOrderUpdated(RepairOrderDTO repairOrder) {
+            this.lastUpdate = repairOrder;
+            this.updateCount++;
+        }
+
+        /** @return The last RepairOrderDTO received. */
+        public RepairOrderDTO getLastUpdate() {
+            return lastUpdate;
+        }
+
+        /** @return The number of times this observer was notified. */
+        public int getUpdateCount() {
+            return updateCount;
+        }
     }
 }
