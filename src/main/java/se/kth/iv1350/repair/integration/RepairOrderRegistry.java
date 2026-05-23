@@ -17,7 +17,7 @@ public class RepairOrderRegistry {
     private final List<RepairOrder> allOrders = new ArrayList<>();
 
     /**
-     * Private constructor tto prevent instantiation of multiple instances
+     * Private constructor to prevent instantiation of multiple instances
      */
     private RepairOrderRegistry() {
 

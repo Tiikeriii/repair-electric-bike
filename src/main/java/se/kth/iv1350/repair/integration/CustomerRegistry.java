@@ -10,10 +10,10 @@ import java.util.Map;
  */
 public class CustomerRegistry {
     private static final CustomerRegistry instance = new CustomerRegistry();
-    private Map<Integer, Customer> customers = new HashMap<>();
+    private final Map<Integer, Customer> customers = new HashMap<>();
 
     /**
-     * Private constructor tto prevent instantiation of multiple instances
+     * Private constructor to prevent instantiation of multiple instances
      */
     private CustomerRegistry() {
         customers.put(123456789, new Customer(

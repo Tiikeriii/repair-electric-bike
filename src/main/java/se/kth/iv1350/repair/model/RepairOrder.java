@@ -23,7 +23,7 @@ public class RepairOrder {
      * @param orderId            A unique identifier for this order.
      * @param customer           The customer and bike information.
      * @param problemDescription The customer's description of the problem.
-     * @param observersToAdd A list of all observers
+     * @param observers A list of all observers
      */
     public RepairOrder(String orderId, Customer customer, String problemDescription,
                     List<RepairOrderObserver> observers) {
@@ -48,7 +48,7 @@ public class RepairOrder {
     }
 
     /**
-     * Notifies all observers that the repair order has been updated
+     * Notifies all observers that the repair order has been updated.
      * 
      */
     private void notifyObservers() {

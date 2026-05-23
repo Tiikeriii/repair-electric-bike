@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: se.kth.iv1350.repair.controller.RepairControllerTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s -- in se.kth.iv1350.repair.controller.RepairControllerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s -- in se.kth.iv1350.repair.controller.RepairControllerTest

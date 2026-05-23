@@ -39,6 +39,7 @@ public class RepairController {
      * Creates a new controller instance.
      *
      * @param registryCreator Provides access to all registries and external systems.
+     * @param repairOrderView The view that displays repair order updates
      */
     public RepairController(RegistryCreator registryCreator, RepairOrderView repairOrderView) {
         this.customerRegistry = registryCreator.getCustomerRegistry();
